@@ -3,7 +3,7 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 
-namespace PruebaDempeño.Helpers
+namespace StoreAppi.Helpers
 {
     public static class JwtTokenHelper
     {

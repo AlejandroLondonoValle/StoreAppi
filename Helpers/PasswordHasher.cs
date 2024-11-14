@@ -1,5 +1,5 @@
 using BCrypt.Net;
-namespace PruebaDempeño.Helpers
+namespace StoreAppi.Helpers
 {
     public static class PasswordHasher
     {
