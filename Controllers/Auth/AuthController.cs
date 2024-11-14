@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using StoreAppi.DTOs.Request;
+using StoreAppiAPI.Services;
 
 namespace StoreAppi.Controllers
 {
@@ -43,7 +44,7 @@ public class AuthController : ControllerBase
 
         var claims = new[]
         {
-            new Claim(ClaimTypes.Name, user.name),
+            new Claim(ClaimTypes.Name, user.Name),
         };
 
         var token = new JwtSecurityToken(
