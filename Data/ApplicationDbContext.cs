@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using StoreAppi.Models;
+using StoreAppi.Seeders;
 
 namespace StoreAppi.Data;
 
@@ -27,6 +28,9 @@ public class ApplicationDbContext : DbContext
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);
+        ProductSeeder.Seed(modelBuilder);
+        CategorySeeder.Seed(modelBuilder);
+        // UserSeeder.Seed(modelBuilder);
 
     }
 }
